@@ -26,7 +26,7 @@ public class User extends newUser {
       double ans=InterestCalculator.calculateSimpleInterest(currentBalance,time);
       System.out.println("For the time period of "+time+" the interest on your account will be "+ans);
       ans+=currentBalance;
-      System.out.println("Your current balance is "+ans);
+      System.out.println("Your balance would be after "+time+" years will be " +ans);
       return ans;
     }
     public double getCInterest(double currentBalance) {
@@ -36,7 +36,7 @@ public class User extends newUser {
       double ans=InterestCalculator.calculateCompoundInterest(currentBalance,time,cf);
       System.out.println("For the time period of "+time+" the compound interest on your account will be "+ans);
       ans+=currentBalance;
-      System.out.println("Your current balance is "+ans);
+      System.out.println("Your balance would be after "+time+" years will be " +ans);
       return ans;
     }
 }
