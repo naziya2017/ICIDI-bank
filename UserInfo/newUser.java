@@ -65,7 +65,8 @@ public class newUser extends AccountNumberGenerator {
           double totalBalance=0.0;
 
     // Properties
-    protected String name;
+    protected String fName;
+     protected String lName;
     private String address;
     private int age;
     private String pin;
@@ -118,12 +119,12 @@ public class newUser extends AccountNumberGenerator {
         this.contact = get;
     }
 
-    public String getName() {
-        return name;
+    public String getFName() {
+        return fName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getLName() {
+        return lName;
     }
 
     public int getAge() {
@@ -168,5 +169,9 @@ public class newUser extends AccountNumberGenerator {
 
     public String getAccountNumber() {
         return accountNumber;
+    }
+    public void setFName(String next) {
+    }
+    public void setLName(String next) {
     }
 }

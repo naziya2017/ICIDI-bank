@@ -20,8 +20,10 @@ public class Main {
                     int nn = 1;
                     n = new newUser(nn);
                     try {
-                        System.out.println("Enter your Name: ");
-                        n.setName(sc.next());
+                        System.out.println("Enter your First Name: ");
+                        n.setFName(sc.next());
+                        System.out.println("Enter your Last Name: ");
+                        n.setLName(sc.next());
                         System.out.println("\nEnter your age: ");
                         n.setAge(sc.nextInt());
                         System.out.println("\nEnter your contact Number: ");
